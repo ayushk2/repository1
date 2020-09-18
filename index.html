@@ -1,0 +1,199 @@
+
+<!doctype html>
+<html>
+<head>
+
+    <title>Registration Form</title>
+    <style>
+        .autowidth
+        { width: auto;
+         }
+       .field{
+            margin: 2vh;
+            margin-right: 4vh;
+        }
+        label{
+            width: 12em;
+            display:inline-block;
+        }
+        legend{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<h1 style="text-align:center">REGISTRATION FORM</h1>
+<form id="form">
+<fieldset class="box">
+    <legend>BASIC DETAILS</legend>
+
+    <div class="field">
+        <label for="formNum">Form Number</label>
+        <input type="text" name="formNum" id="formnum">
+    </div>
+    <div class="field">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+    </div>
+    <div class="field">
+        <label for="rollNum">Roll Number</label>
+        <input type="text" name="rollNum" id="rollNum">
+    </div>
+    <div class="field">
+        <label for="gender">Gender</label>
+
+        <label for="male" class="autowidth" >Male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="female" class ="autowidth">Female</label>
+        <input type="radio" name="gender" id="female">
+
+    </div>
+    <div class="field">
+        <label for="dob">D.O.B</label>
+        <input type="date" name="" id="dob">
+    </div>
+    <div class="field">
+        <label for="pwd">PWD</label>
+
+        <label for="yes" class="autowidth">Yes</label>
+        <input type="radio" name="pwd" id="yes">
+        <label for="no" class="autowidth">No</label>
+        <input type="radio" name="pwd" id="no">
+
+    </div>
+    <div class="field">
+        <label for="category">Category</label>
+        <select name="category" id="category">
+            <option value="gen">General</option>
+            <option value="obc">OBC</option>
+            <option value="sc">SC</option>
+            <option value="st">ST</option>
+        </select>
+    </div>
+    <div class="field">
+        <label for="address">Address</label>
+        <br>
+        <textarea name="" id="address" cols="60" rows="5"></textarea>
+    </div>
+    <div class="field">
+        <label for="pincode">PIN Code</label>
+        <input type="number" name="" id="pincode" min="100001" max="999999" style="width:6em;">
+    </div>
+    <div class="field">
+        <label for="cnum">Phone of Student</label>
+        <span>
+                <input type="text" name="" id="cnum" value="+91" style="width: 2em;">
+                <input type="number" name="" id="cnum" max="9999999999">
+            </span>
+    </div>
+    <div class="field">
+        <label for="gnum">Phone of Gaurdian</label>
+        <span>
+                <input type="text" name="" id="" value="+91" style="width: 2em;">
+                <input type="number" name="" id="gnum" max="9999999999">
+            </span>
+    </div>
+</fieldset>
+<fieldset class="box">
+    <legend>ACADEMIC DETAILS</legend>
+    <div class="field">
+        <label for="course">Course</label>
+        <select name="" id="course">
+            <option value="btech">B.Tech</option>
+            <option value="barch">B.Arch</option>
+            <option value="mtech">M.TECH</option>
+        </select>
+    </div>
+    <div class="field">
+        <label for="branch">Branch</label>
+        <select name="" id="branch">
+            <option value="cse">CSE</option>
+            <option value="ee">ELECTRICAL</option>
+            <option value="ece">ELECTRONICS</option>
+            <option value="mech">MECHANICAL</option>
+            <option value="civil">CIVIL</option>
+            <option value="integrated">INTEGRATED</option>
+        </select>
+    </div>
+    <div class="field">
+        <label for="sem">Semester</label>
+        <select name="" id="sem">
+            <option value="1_sem">1st</option>
+            <option value="3_sem">3rd</option>
+            <option value="5_sem">5th</option>
+            <option value="7_sem">7th</option>
+        </select>
+        <span > (for which allotment will be done)</span>
+    </div>
+    <div class="field">
+        <label for="air">All India Rank</label>
+        <input type="number" name="" id="air" style="width: 6em;">
+        <span>(2020 JEE Main/GATE)</span>
+    </div>
+    <div class="field">
+        <label for="cir">Category Rank</label>
+        <input type="number" name="" id="cir" style="width: 6em;">
+        <span>(2020 JEE Main/GATE)</span>
+    </div>
+    <div class="field">
+        <label for="cgpa">CGPA</label>
+        <input type="number" name="" id="cgpa" max="10">
+    </div>
+    <div class="field">
+        <label for="backlog">Backlog</label>
+
+                <label for="yesbacklog" class="autowidth">Yes</label>
+                <input type="radio" name="backlog" id="yesbacklog">
+                <label for="nobacklog" class="autowidth">No</label>
+                <input type="radio" name="backlog" id="nobacklog">
+    </div>
+    <div class="field">
+        <label for="hostel">Hostel Accomodation</label>
+
+                <label for="yeshostel" class="autowidth">Yes</label>
+                <input type="radio" name="hostel" id="yeshostel">
+                <label for="nohostel" class="autowidth">No</label>
+                <input type="radio" name="hostel" id="nohostel">
+
+
+    </div>
+    <div class="field" id="name_hostel">
+        <label for="hostel_name">Name of Hostel (if any)</label>
+        <input type="text" name="" id="hostel_name">
+    </div>
+    <div class="field" id="room_hostel">
+        <label for="hostel_room">Room Number (if any)</label>
+        <input type="text" name="" id="hostel_room">
+    </div>
+</fieldset>
+<fieldset class="box">
+    <legend>
+        ACCOUNT DETAILS FOR REFUNDING PROCESS
+    </legend>
+    <div class="field">
+
+
+                <label for="">Account Holder Name</label>
+                <input type="text" name="" value="">
+    </div>
+    <div class="field">
+                <label for="">Account Number</label>
+                <input type="text" name="" value="">
+    </div>
+<div class="field">
+        <label for="">IFSC CODE</label>
+        <input type="text" name="" value="">
+</div>
+    <div class="field">
+                <label for="">Bank Name</label>
+                <input type="text" name="" value="">
+    </div>
+<div class="field">
+                <label for="">Bank Branch</label>
+                <input type="text" name="" value="">
+</div>
+</fieldset>
+</form><br>
+<button type="submit" form="form" value="Submit">Submit</button>
+</body>
+</html>
